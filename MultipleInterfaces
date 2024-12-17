@@ -1,0 +1,20 @@
+abstract class Animal {
+	public void walk() {
+		System.out.println("Animal walks");
+	}
+	public abstract void sleep();
+}
+
+class Puppy extends Animal {
+	public void sleep() {
+		System.out.println("Puppy sleeps");
+	}	
+}
+
+public class MultipleInterfaces {
+    public static void main(String[] args) {
+        Puppy myPuppy = new Puppy();
+        myPuppy.walk();  
+        myPuppy.sleep();    
+    }
+}
